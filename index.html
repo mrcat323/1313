@@ -1,39 +1,389 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Our beautiful android app</title>
-    <link rel="stylesheet" href="bulma.css">
+    <title>1313 - Психологическая помощь</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
+    <style>
+        .hero.is-large .hero-body {
+            padding-bottom: 0;
+            padding-top: 10rem;
+        }
+        .hero figure {
+            height: 0;
+            padding-bottom: 75%;
+            overflow: hidden;
+        }
+        figure.image {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .bg-white {
+            background-color: #ffffff;
+        }
+        .bg-light {
+            background-color: #faf6fb;
+        }
+        .media-left {
+            padding-left: 15px;
+        }
+        .media-left .icon {
+            margin-top: 15px;
+
+        }
+
+        .media-content {
+            padding-left: 25px;
+        }
+
+        .media {
+            background-color: #ffffff;
+            padding: 25px;
+        }
+
+        .section {
+            padding: 7rem 5rem;
+        }
+
+        .content h1 {
+            margin-bottom: 2em;
+        }
+
+        #download-apps {
+            color: #ffffff;
+            background-image: linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+        }
+
+        .hero.is-landing {
+            color: #ffffff;
+            background-image: linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+        }
+
+        .hero.is-landing * {
+            color: #ffffff;
+        }
+
+        #download-button:hover {
+            color: #000000;
+            border-color: #000000;
+        }
+
+        #download-apps h1 {
+            color: #ffffff;
+        }
+
+        .button.button-store {
+            border-radius: 3px;
+            background: #FFF;
+            box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.26);
+            font-size: 14px;
+            font-weight: 500;
+            color: #633991;
+            margin: 0.5rem;
+            padding: 0.7rem 1.6rem;
+            line-height: 1.8;
+            height: auto;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+
+            display: inline-block;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+
+        a.button.is-info.is-inverted.is-outlined.download-button:hover {
+            color: #000000;
+            border: #000000;
+        }
+
+        .button.button-store:hover {
+            color: #000000;
+            background-color: #faf6fb;
+        }
+
+        .button.button-store img {
+            margin-right: 0.4rem;
+            vertical-align: text-bottom;
+        }
+    </style>
 </head>
 <body>
-        
-                
-                        <section class="hero is-primary is-medium">
-                                <div class="columns is-mobile is-centered">
-                                    <div class="column is-half-mobile is-3-desktop">
-                                <div class="hero-body">
-                                  <div class="container">
-                                    <h1 class="title">
-                                      Выберите категорию насилия:
-                                    </h1>
-                                    <div class="field">
-                                    <div class="control">
-                                        <div class="select">
-                                        <select>
-                                            <option>Психологическая</option>
-                                            <option>Юридическая</option>
-                                        </select>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <button class="button is-info is-medium">Помощь</button> 
-                                </div>
+
+<div class="content-wrapper">
+
+    <section class="hero is-landing is-large">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            1313
+                        </a>
+                        <span class="navbar-burger burger" data-target="mainNavbar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="mainNavbar" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="#features" class="navbar-item">
+                                Преимущества
+                            </a>
+                            <a href="#faq" class="navbar-item">
+                                ЧаВО
+                            </a>
+                            <a href="#contact-us" class="navbar-item">
+                                Обратная связь
+                            </a>
+                            <a href="#download-apps" class="navbar-item">
+                                Скачать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <h1 class="title is-1">
+                            1313 - Психологическая помощь
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            Усиление общественной безопасности и предотвращение насилия в семье в Таджикистане
+                        </h2>
+
+                        <figure class="image">
+                            <img src="img/iphonex.png" alt="" width="768">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features" class="bg-light">
+        <div class="container section">
+            <div class="content has-text-centered">
+                <h1>Преимущества нашего сервиса</h1>
+            </div>
+
+            <nav class="columns">
+                <div class="column has-text-centered">
+                    <article class="media">
+                        <figure class="media-left">
+                            <span class="icon has-text-danger">
+                                <i class="fas fa-question-circle fa-3x"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h4 class="heading"><strong>Оффлайн поддержка</strong></h4>
+                                <p>
+                                    Не волнуйтесь, если у Вас нет подключение к интернету Вы все равно можете к нам обратиться
+                                </p>
                             </div>
-                                  </div>
-                                </div>
-                              </section>
-                
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column has-text-centered">
+                    <article class="media">
+                        <figure class="media-left">
+                            <span class="icon has-text-danger">
+                                <i class="fas fa-bullhorn fa-3x"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h4 class="heading"><strong>Экстренный вызов</strong></h4>
+                                <p>Даже если у Вас нет баланса на счету, Вы можете совершить созвониться со специалистом
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column has-text-centered">
+                    <article class="media">
+                        <figure class="media-left">
+                            <span class="icon has-text-danger">
+                                <i class="fas fa-pencil-alt fa-3x"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                    <h4 class="heading"><strong>Заполнение формы</strong></h4>
+                                    <p>Заполняя форму регистрации Вас попросят ввести адрес проживание, номер телефона и электронную почту (если есть). При этом конфединциальность гарантирована
+                                    </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container section">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <figure class="image">
+                        <img src="img/iphonex.png" alt="">
+                    </figure>
+                </div>
+                <div class="column ">
+                        <div class="content">
+                            <h1>Откройте 1313 для себя</h1>
+                            <p>К счастью у Вас для выбора, или Вы можете использовать наше приложение или просто воспользоваться USSD кодом <b>*1313#</b>, но чтобы активно быть на связи с психологами и юристами мы Вам советуем воспользоваться нашим приложением.</p>
+
+                            <a href="#download-apps" class="button is-danger">Открыть</a>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="bg-light">
+        <div class="container section">
+            <div class="content has-text-centered">
+                <h1>Часто Задаваемые Вопросы</h1>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="title is-4">Могу ли Я воспользоваться сервисом с кнопочного телефона?</div>
+                    <p>На этот вопрос ответ положительный, Вы можете использовать сервис чтобы связаться со специалистами набирая следующий USSD код в телефоне: <b>*1313#</b></p>
+                </div>
+
+                <div class="column is-half">
+                    <div class="title is-4">Можно ли на постоянной основе быть на связи со специалистами?</div>
+                    <p>Для того чтобы постоянно быть на связи с психологами и юристами Вам следует скачать наше приложение.</p>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="title is-4">Кто больше жалуется?</div>
+                    <p>По общей статистике жалуются и мужчины и женщины, вернее 50 на 50</p>
+                </div>
+
+                <div class="column is-half">
+                    <div class="title is-4">Работает ли сервис круглосуточно?</div>
+                    <p>Колцентр в будни работал с 8 утра до 7 вечера, а по выходным с 8 утра до 1 дня</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="download-apps">
+        <div class="container section has-text-centered">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+
+                    <h1 class="title is-2">Скачивайте везде</h1>
+                    <p>Вам повезло что Вы можете пользоваться нашем приложением в нескольких платформах</p>
+
+                    <a href="#" class="button button-store">
+                        <img src="img/appleicon.png" alt="icon"> Apple Store
+                    </a>
+
+                    <a href="#" class="button button-store">
+                        <img src="img/playicon.png" alt="icon"> Google play
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="hero" id="contact-us">
+		<div class="hero-body">
+			<div class="container">
+				<div>
+					<div class="content">
+						<h4 class="title is-4">Будьте с нами на связи!</h4>
+					</div>
+					<h6 class="subtitle is-6">Если хотите связаться с нами, чувствуйте себя свободно</h6>
+
+					<div class="columns box">
+						<form class="column" action="#">
+							<div class="field">
+								<label class="label">Имя</label>
+								<div class="control">
+									<input class="input" type="text" placeholder="Ваше Имя" required="">
+								</div>
+							</div>
+
+							<div class="field">
+								<label class="label">Электронная почта</label>
+								<div class="control">
+									<input class="input" type="text" placeholder="Электронная почта" required="">
+								</div>
+							</div>
+
+							<div class="field">
+								<label class="label">Номер телефона</label>
+								<div class="control">
+									<input class="input" type="text" placeholder="Ваш номер телефона" required="">
+								</div>
+							</div>
+
+							<div class="field">
+								<label class="label">Сообщение</label>
+								<div class="control">
+									<textarea class="textarea" type="text" placeholder="Ваше сообщение"  required=""></textarea>
+								</div>
+							</div>
+
+							<div class="field">
+								<label class="label"></label>
+								<div class="control">
+									<input class="button is-danger" value="Отправить" type="submit">
+								</div>
+							</div>
+						</form>
+
+						<div class="column">
+							<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d655.4178732168823!2d68.78668982919173!3d37.83854305786185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDUwJzE4LjgiTiA2OMKwNDcnMTQuMSJF!5e1!3m2!1sru!2s!4v1557386942079!5m2!1sru!2s" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    1313 built
+                    with
+                    <span class="icon has-text-danger">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    by <a href="#">Infinity Team</a>
+                    @ 2019.
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
